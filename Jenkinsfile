@@ -20,7 +20,7 @@ pipeline {
         steps{
             script {
                 docker.withRegistry( '', registryCredential ) {
-                dockerImage.push()
+                  sh 'docker push umermunirrr/test-node-app:latest'
                 }
             }
         }
