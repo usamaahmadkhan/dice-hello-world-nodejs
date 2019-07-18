@@ -14,6 +14,7 @@ pipeline {
     }
     stage('Publish') {
       steps {
+          sh 'echo Umer'
         }
       }
     }
